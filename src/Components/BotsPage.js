@@ -12,7 +12,7 @@ function BotsPage() {
 //API data fetch
 
 useEffect(()=>{
-  fetch("http://localhost:8001/bots")
+  fetch("http://localhost:8000/bots")
   .then(res=>res.json())
   .then(data=>setBots(data))
 },[])
